@@ -32,7 +32,7 @@ foreach ($cart as $product_id) {
 $order_details .= "Total Price: " . number_format($total_price, 2) . " PHP\n";
 
 // Save order details to a file
-file_put_contents("orders/{$order_code}.txt", $order_details);
+file_put_contents("orders-{$order_code}.txt", $order_details);
 
 // Clear the cart
 $_SESSION['cart'] = [];
